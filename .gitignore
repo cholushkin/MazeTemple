@@ -59,3 +59,7 @@ sysinfo.txt
 crashlytics-build.properties
 
 /Unity/MazeTemple/.vsconfig
+/Unity/MazeTemple/Library
+/Unity/MazeTemple/Logs
+/Unity/MazeTemple/obj
+/Unity/MazeTemple/UserSettings
