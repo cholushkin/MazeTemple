@@ -1,0 +1,3 @@
+[submodule "Unity/MazeTemple/Assets/Libs/gamelib"]
+	path = Unity/MazeTemple/Assets/Libs/gamelib
+	url = https://github.com/cholushkin/gamelib.git
