@@ -1379,6 +1379,7 @@ MonoBehaviour:
   TowerHeight:
     From: 4
     To: 18
+  PeoplePercent: 0.3
   Layers:
   - {fileID: 2068417744}
   - {fileID: 1406593802}
@@ -1393,6 +1394,20 @@ MonoBehaviour:
   - {fileID: 419629674501467756, guid: d3596e1b9508239438fb226eec69232f, type: 3}
   - {fileID: 2498254411006034886, guid: c921f4bade0b7fc41a0bac25f974d5a3, type: 3}
   - {fileID: 2392446355593936595, guid: d38404a582f62b54b9badb67b74bf055, type: 3}
+  PeoplePrefabs:
+  - {fileID: 919132149155446097, guid: 7a0ace0e5dcc1bf4584f60515e5d5ee2, type: 3}
+  - {fileID: 919132149155446097, guid: 0aba6b24c4c131a45b3677bf374745a7, type: 3}
+  - {fileID: 919132149155446097, guid: 28b9cda9908197f43913e9562836e64c, type: 3}
+  - {fileID: 919132149155446097, guid: f755971d49be35b4995f4040e5bf2b2b, type: 3}
+  - {fileID: 919132149155446097, guid: bdc36a756d632c14b916bba099fcc6e9, type: 3}
+  - {fileID: 919132149155446097, guid: dd930b8f1f84b6441abbe5a2c744e942, type: 3}
+  - {fileID: 919132149155446097, guid: 868b72ee7a798d248b8dfeecf4f833fb, type: 3}
+  - {fileID: 919132149155446097, guid: ab41eadccc8e5434d812c3a5d14cbbc8, type: 3}
+  - {fileID: 919132149155446097, guid: a8518710827a83b43b60c59aedd6a3f9, type: 3}
+  - {fileID: 919132149155446097, guid: 6abb274dab8c3b04c8fbd13aaa60e667, type: 3}
+  - {fileID: 919132149155446097, guid: 963b5c1c54e32464399da6023ec4f3f4, type: 3}
+  - {fileID: 919132149155446097, guid: 4a8036099172e574d82ecc265967a36d, type: 3}
+  - {fileID: 919132149155446097, guid: ca3f696cd3b74b44a9b73580ca317700, type: 3}
 --- !u!4 &954088101
 Transform:
   m_ObjectHideFlags: 0

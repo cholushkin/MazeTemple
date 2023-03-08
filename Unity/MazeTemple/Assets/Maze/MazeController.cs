@@ -10,11 +10,16 @@ public class MazeController : MonoBehaviour
     public long Seed;
     public bool PropagateSeed;
     public Range TowerHeight;
+
+    [Range(0f, 1f)]
+    public float PeoplePercent;
+
     public MazeLayer[] Layers;
     public int MaxTowersNumber;
     public int[] MaxColumnsPerLayer;
 
     public GameObject[] TowerChunkPrefabs;
+    public GameObject[] PeoplePrefabs;
 
     private int[,] _raycasts;
     private Vector2Int[,] _offsets;
@@ -35,6 +40,7 @@ public class MazeController : MonoBehaviour
         GenerateConnectionsBetweenLayers();
         SpawnTowers();
         SpawnColumns();
+        SpawnPeople();
     }
 
     private void GenerateConnectionsBetweenLayers()
@@ -123,6 +129,20 @@ public class MazeController : MonoBehaviour
                 if (spawnedColums >= MaxColumnsPerLayer[i])
                     break;
             }
+        }
+    }
+
+    private void SpawnPeople()
+    {
+        var spawners = GameObject.FindGameObjectsWithTag("Respawn");
+        _rnd.ShuffleInplace(spawners);
+
+        for (int i = 0; i < spawners.Length * PeoplePercent; ++i)
+        {
+            var person = Instantiate(_rnd.FromArray(PeoplePrefabs), spawners[i].transform.position,
+                Quaternion.Euler(-90, 0, _rnd.Range(0f, 360f)));
+            person.transform.SetParent(spawners[i].transform);
+            person.transform.localScale = Vector3.one;
         }
     }
 
