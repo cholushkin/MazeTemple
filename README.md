@@ -1,7 +1,7 @@
 # Maze temple
-Self-avoiding walk application example. 
-This project is a part of GRID ADVENTURE (click on image to play video): link  
-This project is based on ImageGrid: https://github.com/cholushkin/ImageGrid . 
+Self-avoiding walk application example. <br>
+This project is a part of GRID ADVENTURE: https://youtu.be/UOmum5xKq0E .<br>
+This project is based on ImageGrid: https://github.com/cholushkin/ImageGrid . <br>
 
 ![Screenshot_1](Images/Screenshot_1.png)
 ![Screenshot_2](Images/Screenshot_2.png)
